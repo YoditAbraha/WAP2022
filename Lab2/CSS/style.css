@@ -1,0 +1,13 @@
+body{
+    color: rgb(6, 118, 118);
+    
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    text-decoration: underline;
+}
+a{
+    font-style: oblique;
+}
