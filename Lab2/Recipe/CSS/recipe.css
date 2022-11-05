@@ -28,7 +28,7 @@ em{
     font-style: normal;
     text-decoration: line-through;
 }
-div{
+div.class{
     background-color: #FFFFA8;
     font-style: italic;
     margin-left: 40px;
