@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+
+body {
+    background-color: rgb(243, 243, 243);
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui,'Courier New', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline;
+    vertical-align: middle;
+}
+
+.heading {
+    display: inline;
+
+}
+
+#logo {
+
+    vertical-align: middle;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+  
+
+}
+
+#navs {
+    padding-left: 800px;
+    text-align: center;
+    
+
+}
+
+nav a {
+    /* font-size: larger; */
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+span {
+    font-size: 19px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+header {
+    background-color: rgb(55, 71, 119);
+    padding: 1em;
+    color: white;
+    text-align: center;
+    
+}
+.container{
+    margin-left: 50px;
+}
+
+#leftbox,#rightbox{
+    margin-top: 50px;
+    margin-inline: -3px;
+
+    /* margin-left: 45px; */
+    border-inline: 1px solid rgb(225, 225, 225);
+
+    /* border-collapse: collapse; */
+    display: inline-block;
+    width: 700px;
+    height: 450px;
+    text-align: center;
+   
+}
+#leftbox{
+    border-left: 0ch;
+}
+#rightbox{
+    border-right: 0;
+    vertical-align: top ;
+}
+
+button{
+    background-color: white; /* Green */
+    border: 1px solid lightgray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+#button1{
+    color: white;
+    background-color: black;
+    width: 420px;
+    height: 50px;
+    font-size: 20px;
+}
+div p{
+    margin: 1em;
+    vertical-align: top;
+    text-align: justify;
+    padding-left: 8em;
+    padding-right: 8em;
+    font-weight: bold;
+}
+#button2{
+    margin-right: 260px;
+    color: white;
+    background-color: black;
+    width: 185px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+#l{
+    color: gray;
+    font-weight: lighter;
+    padding-right: 130px;
+    margin-bottom: 1px;    
+}
+#l2{
+    color: grey;
+    font-weight: lighter;
+    text-align: center;
+}
+#u{
+    
+    color: gray;
+    font-weight: lighter;
+    padding-right: 280px;
+    margin-bottom: 1px;    
+}
+#p{
+    color: gray;
+    font-weight: lighter;
+    padding-right: 340px;
+    margin-bottom: 1px;    
+
+}
+#check{
+    color: gray;
+    font-weight: lighter;
+    padding-right: 135px;
+    margin-bottom: 1px;    
+}
+
+
+h3{
+    padding-right: 30px;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+.textfield{
+    width: 400px;
+    height: 40px;
+    border-color: rgb(10, 151, 238);
+}
+
+#pass{
+    color: rgb(130, 149, 173);
+}
+blue{
+    text-decoration: none;
+    color: rgb(130, 149, 173);
+}
+
