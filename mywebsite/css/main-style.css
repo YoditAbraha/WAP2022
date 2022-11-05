@@ -1,0 +1,14 @@
+/* main-style.css */
+
+header {
+    background-color: navy;
+}
+header h1 {
+    color: silver;
+}
+nav {
+    background-color: aqua;
+}
+nav ul li {
+    display: inline;
+}
