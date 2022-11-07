@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lab4/CSS/style.css">
+    <title>WebForm1_LoginPage</title>
+</head>
+
+<body>
+
+    <form action="#">
+        <label for="email"> Email address</label>
+        <input type="email" placeholder="Enter email">
+        <p>We will never share your email with anyone else.</p>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" tittle = "password " pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{10,}$">
+
+        <label id="check"><input type="checkbox">Check me out</label>
+        <label for="text">URL</label>
+        <input type="text" placeholder="Input URL" tittle = "password " pattern="http[s]?:\/\/.+">
+        <label id="check"><input type="checkbox">Check me out</label>
+        
+        <input type="submit">
+
+    </form>
+
+
+
+</body>
+
+</html>

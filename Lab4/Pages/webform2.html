@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/webform2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <title>webForm2</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftnav">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market : : : SRM System</a>
+
+            <a class="nav-link" href="#">|</a>
+
+            <a class="nav-link" href="#">Products</a>
+
+            <a class="nav-link" href="#">|</a>
+
+            <a class="nav-link" href="#">Suppliers</a>
+
+        </div>
+        <div class = "rightnav">
+            <label>Hello!</label>
+            <button class="btn" type="submit">Sign out</button>
+
+        </div>
+
+    </nav>
+
+    <div class="container-md">
+        <div class="row">
+            <header>
+                <h3>New Product Form</h3>
+            </header>
+            <div class="col-md-6">
+
+
+
+                <form action="#" autocomplete=“on”>
+                    <label for="text">Product Number</label>
+                    <input type="text">
+
+                    <label for="text">Name</label>
+                    <input type="text">
+
+                    <label for="text">Unit Price</label>
+                    <input type="text" placeholder="0.0">
+
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <form action="#" autocomplete=“on”>
+                    <label for = "text">Quantity in stock</label>
+                    <input type="text" placeholder="0">
+
+                    <label for="text">Supplier</label>
+                    <select name="supplier">
+                        <option selected>Select a supplier</option>
+                        <option>MIU</option>
+                        <option>UC Davis</option>
+                        <option>UC Berkley</option>
+                        <option>StandFord</option>
+                    </select>
+
+                    <label for="text">Date supplied</label>
+                    <input type="text" placeholder="yyyy-mm-dd">
+                    <label>Enter a valid Date</label>
+
+                    <div id="btn">
+                        <button id="one">Reset</button>
+                        <button id="two">Cancel</button>
+                        <button id="three">Add Product</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
