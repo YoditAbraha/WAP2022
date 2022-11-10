@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIU Student Government - Voter Registration Form</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src = "./js/voter.js"></script>
+    <title>MIU Student Government - Voter Registration Form</title>
 </head>
+
 <body>
     <header>
         <h1>MIU Student Government</h1>
@@ -27,13 +30,13 @@
         <div style="margin-bottom: 1em;">
             Note: All data fields are required.
         </div>
-        <form>
+        <form id="form">
             <div class="form-row">
                 <div>
                     <label for="voterNo">Voter Number</label>
                 </div>
                 <div>
-                    <input autofocus class="text-field" type="text" name="voterNo" id="voterNo">
+                    <input autofocus class="text-field" type="text" name="voterNo" id="voterNo" pattern="\d{10}">
                 </div>
             </div>
             <div class="form-row">
@@ -75,6 +78,10 @@
                 </div>
             </div>
         </form>
+        <div id = "message">
+            <pre id = "message2"></pre>
+        </div>
     </main>
 </body>
+
 </html>

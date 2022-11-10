@@ -1,0 +1,106 @@
+/* style.css */
+/* @author: Prof. O. Kalu */
+/* @since Wednesday, November 9th, 2022 */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body > header {
+    display: flex;
+    width: 100vw;
+    min-height: 10vh;
+    align-items: center;
+    background-color: navy;
+}
+body > header > section#branding-logo {
+    font-size: 1.5em;
+    color: aliceblue;
+    width: 80vw;
+    margin-left: 1em;
+}
+body > header > section#user-greeting {
+    color: lightgoldenrodyellow;
+    width: 20vw;
+    margin-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+body > header > section#user-greeting > h1 {
+    border-right: 1px solid;
+    padding-right: 1em;
+}
+body > nav {
+    background-color: lightsteelblue;
+    color: lightgoldenrodyellow;
+}
+body > nav > ul.nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    min-height: 5vh;
+    font-size: 1.2em;
+    align-items: center;
+}
+body > main {
+    /* border: 1em solid lightcoral; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+body > main > section#mainContent {
+    /* border: 1px solid rgb(123, 121, 121); */
+    width: 90%;
+}
+form div.form-row {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+form div.form-controls-group {
+    flex: 1;
+}
+form div.form-controls-group input {
+    width: 100%;
+    height: 3em;
+    font-size: 1.2em;
+}
+form div.wide2 {
+    flex: 2;
+}
+form div.btnPanel {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+form div.btnPanel button.btn {
+    font-size: 1.2em;
+    padding: 1em;
+}
+body > footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+body > footer > div#topFooter {
+    /* TODO */
+}
+body > footer > div#bottomFooter {
+    display: flex;
+    background-color: lightgrey;
+    min-height: 5vh;
+    align-items: center;
+}
+body > footer > div#bottomFooter > div#bottomFooter-left {
+    width: 60%;
+    margin-left: 1em;
+}
+body > footer > div#bottomFooter > div#bottomFooter-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+}

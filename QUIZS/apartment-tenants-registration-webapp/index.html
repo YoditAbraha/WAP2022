@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinox Property Management - Tenants Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src = "js/appartment.js">text/javascript</script>
+</head>
+<body>
+    <header>
+        <section id="branding-logo">
+            <h1>Equinox Property Management : : : Tenants Registration</h1>
+        </section>
+        <section id="user-greeting">
+            <h1>Hello, Guest</h1> 
+            <h2>Sign In</h2>
+        </section>
+    </header>
+    <nav>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">Tenant Registration</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact Information</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="mainContent">
+            <h1>Tenant Registration Form</h1>
+            <hr>
+            <!-- TODO: Put Form here -->
+            <form action="./index.html" method="post" id = "form">
+                <fieldset>
+                    <legend>Apartment Data</legend>
+                    <div class="form-row">
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="buildingNo">Building No.</label>
+                            </div>
+                            <div>
+                                <input type="text" name="buildingNo" id="buildingNo" autofocus>
+                            </div>
+                        </div>
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="floorNo">Floor No.</label>
+                            </div>
+                            <div>
+                                <input type="text" name="floorNo" id="floorNo">
+                            </div>
+                        </div>
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="apartmentNo">Apartment No.</label>
+                            </div>
+                            <div>
+                                <input type="text" name="apartmentNo" id="apartmentNo">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tenant Information</legend>
+                    <div class="form-row">
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="title">Title</label>
+                            </div>
+                            <div>
+                                <input type="text" name="title" id="title">
+                            </div>
+                        </div>
+                        <div class="form-controls-group wide2">
+                            <div>
+                                <label for="fullNames">Full Names</label>
+                            </div>
+                            <div>
+                                <input type="text" name="fullNames" id="fullNames">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="phoneNo">Phone No.</label>
+                            </div>
+                            <div>
+                                <input type="text" name="phoneNo" id="phoneNo" pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}">
+                            </div>
+                        </div>
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="email">Email</label>
+                            </div>
+                            <div>
+                                <input type="text" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form-controls-group">
+                            <div>
+                                <label for="driversLicenceNo">Driver's Licence No.</label>
+                            </div>
+                            <div>
+                                <input type="text" name="driversLicenceNo" id="driversLicenceNo" pattern="[A-Z]{2}[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="btnPanel">
+                    <div>
+                        <button class="btn">Register Tenant</button>
+                    </div>
+                </div>
+            </form>
+            <div id = "message"></div>
+        </section>
+    </main>
+    <footer>
+        <div id="topFooter">
+            <section>
+                <!-- TODO: Department contact info -->
+            </section>
+            <section>
+                <!-- TODO: Site map -->
+            </section>
+            <section>
+                <!-- TODO: Locations/Addresses -->
+            </section>
+        </div>
+        <div id="bottomFooter">
+            <div id="bottomFooter-left">
+                <span>Prof. O. Kalu : : : CS472-WAP - Quiz2</span>
+            </div>
+            <div id="bottomFooter-right">
+                <span>Copyleft &copy; November 2022</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
