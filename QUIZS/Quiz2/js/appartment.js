@@ -17,7 +17,6 @@ const form = document.getElementById("form");
 
 form.onsubmit = ()=>{
    
-
     alert(`
     Building No: ${buildingNo.value}
     Floor No: ${floorNo.value}
