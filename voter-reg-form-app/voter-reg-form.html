@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIU Student Government - Voter Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>MIU Student Government</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="./voter-reg-form.html">Voter Registration Form</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="pageTitle">Voter Registration Form</h1>
+        <hr>
+        <div style="margin-bottom: 1em;">
+            Note: All data fields are required.
+        </div>
+        <form>
+            <div class="form-row">
+                <div>
+                    <label for="voterNo">Voter Number</label>
+                </div>
+                <div>
+                    <input autofocus class="text-field" type="text" name="voterNo" id="voterNo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <div>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div>
+                        <input class="text-field" type="text" name="firstName" id="firstName">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <div>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div>
+                        <input class="text-field" type="text" name="lastName" id="lastName">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="levelOfStudy">Level of Study</label>
+                </div>
+                <div>
+                    <select name="levelOfStudy" id="levelOfStudy">
+                        <option value=""></option>
+                        <option value="graduate">Graduate</option>
+                        <option value="undergraduate">Undergraduate</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div id="btnPanel">
+                    <input class="btn-basic" type="reset" value="Reset">
+                    <input class="btn-basic" type="submit" value="Register">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
