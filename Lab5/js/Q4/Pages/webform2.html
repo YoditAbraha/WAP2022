@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/webform2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <title>webForm2</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftnav">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market : : : SRM System</a>
+
+            <a class="nav-link" href="#">|</a>
+
+            <a class="nav-link" href="#">Products</a>
+
+            <a class="nav-link" href="#">|</a>
+
+            <a class="nav-link" href="#">Suppliers</a>
+
+        </div>
+        <div class="rightnav">
+            <label id="">Hello!</label>
+            <button class="btn" type="submit">Sign out</button>
+
+        </div>
+
+    </nav>
+    <form id="form" action="#" autocomplete=“on”>
+        <div class="container-md">
+            <div class="row">
+                <header>
+                    <h3>New Product Form</h3>
+                </header>
+                <div class="col-md-6">
+
+
+
+
+                    <label class="formLabel" for="productNumber">Product Number</label>
+                    <input type="number" name="Product Number" id="productNumber" required>
+
+                    <label class="formLabel" for="productName">Name</label>
+                    <input type="text" name="Name" id="productName" required>
+
+                    <label class="formLabel" for="unitPrice">Unit Price</label>
+                    <input type="number" name="Unit Price" id="unitPrice" placeholder="0.0" step = "0.01"required>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <label class="formLabel" for="quantity">Quantity in stock</label>
+                    <input name="Quantity" type="number" id="quantity" placeholder="0" required ">
+
+                    <label class="formLabel" for="supplier">Supplier</label>
+                    <select name="Supplier" id="supplier" required>
+                        <option disabled>Select a supplier</option>
+                        <option>MIU</option>
+                        <option>UC Davis</option>
+                        <option>Harvord</option>
+                        <option>UC Berkley</option>
+                    </select>
+
+                    <label class="formLabel" for="date">Date supplied</label>
+                    <input name="Date" type="date" id="date" required>
+                    <label>Enter a valid Date</label>
+
+                    <div id="btns">
+                        <input id="one" type="reset">
+                        <button id="two">Cancel</button>
+                        <input type ="submit" value="Add Product" id="addProduct">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
