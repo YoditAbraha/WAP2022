@@ -1,0 +1,35 @@
+div.navbar{
+    background-color: black;
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 100%;
+    height: 60px;
+}
+a{
+    color: white;
+     text-decoration: none;
+     padding: 1em;
+ }
+ span{
+     color: white;
+ }
+ #row{
+     padding-left: 1em;
+ }
+ #btn{
+    margin-top: 10px;;
+ }
+ input[type = "text"],textarea{
+    width: 100%;
+ }
+ #Reset{
+    background-color: rgb(70, 64, 64);
+    color: white;
+ }
+ #createAcc{
+    background-color: blue;
+    color: white;
+ }
+ #accinfo{
+    margin-left: 5px;
+ }

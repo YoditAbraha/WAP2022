@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The South West Regional Census - Census Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cerulean/bootstrap.min.css" integrity="sha512-9u5YwIpV3mbAd1ocXZRz1Ezzq8DGicGD+PuUkUiTtTU3Yc95IMc66/Txe/iNxGTxckPu60RQw8zphvVqYiRfTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/census.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">The South West - Regional Census</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./census-form.html">Census Form</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <div>
+                    <span>Friday, 11 November 2022 - 12:08:37 PM</span>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="mainContent">
+            <h1>
+                Census Form
+            </h1>
+            <hr>
+            <div>
+                <form id="censusForm" action="#" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-control-group">
+                                <div><label for="txtFullName">Full Names:</label></div>
+                                <div><input type="text" name="txtFullName" id="txtFullName" class="form-control" autofocus required></div>
+                                <div>
+                                    <small>Enter your full name</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-control-group">
+                                <div><label for="txtFullName">Citizen ID:</label></div>
+                                <div><input type="text" name="txtCitizenId" id="txtCitizenId" class="form-control" required pattern="\d{10}"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-control-group">
+                                <div><label for="txtSSN">Social Secutiry No:</label></div>
+                                <div><input type="text" name="txtSSN" id="txtSSN" class="form-control" required pattern="\d{3}-\d{2}-\d{4}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-control-group">
+                                <div><label for="txtState">*State:</label></div>
+                                <div>
+                                    <select name="txtState" id="txtState" class="form-control">
+                                        <option value="">Select ...</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="TX">Texas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-control-group">
+                                <div><label>Senior Citizen*:</label></div>
+                                <div>
+                                    <label for="rdoSeniorCitizenYes">
+                                        <input type="radio" name="rdoSeniorCitizen" id="rdoSeniorCitizenYes" required value="Yes">Yes
+                                    </label>
+                                    <label for="rdoSeniorCitizenNo">
+                                        <input type="radio" name="rdoSeniorCitizen" id="rdoSeniorCitizenNo" required value="No">No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left-footer">
+            <!-- Name and Course -->
+            <span>O. Kalu : : : CS472-WAP</span>
+        </div>
+        <div class="mid-footer">
+            <span>Privacy Policy</span> | 
+            <span>Terms of use</span> | 
+            <span>Carbono<sup>&reg;</sup> neutral since 2007</span>
+        </div>
+        <div class="right-footer">
+            <!-- Copyright -->
+            <span>&copy; November 2022</span>
+        </div>
+    </footer>
+</body>
+</html>

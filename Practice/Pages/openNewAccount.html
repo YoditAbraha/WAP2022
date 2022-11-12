@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../js/openNewAcc.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="../CSS/openNewAcc.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <span id="span">CS472-WAP Bank</span>
+            <a href="./WAPBank.html">Home</a>
+            <a href="#">Open new Account</a>
+        </div>
+        <div>
+            <span>Hello,NewCustomer</span>
+        </div>
+    </div>
+    <div class="container-md">
+        <h2>New Account Form</h2>
+        <hr>
+        <form action="#" id="form">
+            <h4>Account Ownership Type*</h4>
+
+
+            <div class="row">
+                <div class="col-md">
+                    <label for="personalacc">Personal Account</label><br>
+                    <input type="radio" name="cc" value="PersonalAccount" checked id="personalacc">
+                </div>
+                <div class="col-md">
+                    <label for="coracc">Corporate Account</label><br>
+                    <input type="radio" name="cc" value="CorporateAccount" checked id="coracc">
+                </div>
+            </div>
+
+            <h4>Customer Information</h4>
+
+
+            <div id="fullname">
+                <label for="fullName">Full Name*</label>
+            </div>
+
+            <input type="text" id="fullName" required>
+
+
+            <!-- Address -->
+
+            <div>
+                <label for="address">Address*</label>
+            </div>
+            <textarea name="Address" id="address" cols="100" rows="3" required></textarea>
+
+
+            <!-- Account Info -->
+            <h3>Account Information</h3>
+
+            <div class="row">
+                <div class=col-md-6>
+                    <div><label for="AccNum">Account Number*</label></div>
+                    <input type="text" id="AccNum" required>
+                </div>
+                <div class=col-md-6>
+                    <div><label for="typeAcc">Type of Account*</label></div>
+                    <input type="text" id="typeAcc" required>
+                </div>
+            </div>
+            <div id="btn">
+                <button type="button" id="Reset">Reset</button>
+                <input type="submit" id="createAcc" value="Create New Account">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

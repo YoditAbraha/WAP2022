@@ -1,0 +1,51 @@
+
+input[type="reset"] {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+input[type="submit"] {
+    /* margin-left: 20px; */
+    border-radius: 5px;
+}
+main>div.container{
+    margin-top: 50px;
+} 
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    height: 5vh;
+    background-color: antiquewhite;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+footer div.left-footer {
+    /* width: 50vw; */
+    margin-left: 2em;
+    flex: 1;
+}
+footer div.mid-footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 1em;
+}
+footer div.right-footer {
+    display: flex;
+    /* width: 50vw; */
+    justify-content: flex-end;
+    margin-right: 2em;
+    flex: 1;
+}

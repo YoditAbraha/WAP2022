@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-warning text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Prince University</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item text-light">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="../index.htm">Home</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#">Degree Programs</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#">Register for a course</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex " role="search">
+                        <label> Welcome, Guest</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <h3>Course Registration Form</h3>
+                <hr>
+
+            </div>
+            <form id = "form" action="#" id="form" method="post">
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row g-2">
+                            <label for="firstName">*First Name:</label>
+                            <input type="text" id="firstName" required>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row g-2">
+                            <label for="middleName">Middle Name:</label>
+                            <input type="text" id="middleName" required>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row g-2">
+                            <label for="lastName">*Last Name:</label>
+                            <input type="text" id="lastName" required>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row g-2">
+                            <label for="address">Address*</label>
+                            <textarea name="address" id="address" cols="100" rows="2" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row g-2">
+                            <label for="personalBio">Personal Bio*</label>
+                            <textarea name="personalBio" id="personalBio" cols="100" rows="2" required></textarea>
+                            <p>A brief note about your academic background</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <!-- radio -->
+                    <!-- <label>Level of Study</label> -->
+                    <h5 id = "levelofstudy">Level of Study</h5>
+                    <div class="col-md -4">
+                        
+                        <div class="row g-2">
+                           
+                            <div class="col"><input type="radio" name="undergraduate" id="undergraduate" value="undergraduate" required><label
+                                    for="undergraduate">Undergraduate</label></div>
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-control-group">
+                        <div class="row g-2">
+                           
+                            <div class="col"><input type="radio" name="graduate" id="graduate" value="graduate" required><label
+                                    for="graduate">Graduate</label></div>
+                           
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row g-2">
+                            <div class="col"><input type="radio" name="postdoctoral" id="postdoctoral" value="postdoctoral" required><label
+                                    for="postdoctoral">Post Doctoral</label></div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>Registration Information</h5>
+                    <div class="col-6">
+                        <div class="row g-2">
+                            <label for="applicationID">Application ID Number*</label>
+                            <input type="text" placeholder="AID-000-XXX-XXXX" id="applicationID" pattern="[AID]-[0]{3}-\d{3}-\d{4}"
+                                required>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row g-2">
+                            <label for="courseRegister">*Course to Register for:</label>
+                            <select name="courseRegister" id="courseRegister" required>
+                                <option value="" selected disabled>Select</option>
+                                <option value="CS401-MPP">CS401-MPP</option>
+                                <option value="CS472-WAP">CS472-WAP</option>
+                                <option value="CS544-EA">CS544-EA</option>
+                            </select>
+                            <p>Select the department providing care</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-end">
+                    <input type="reset" name="reset" class=" bg-dark border-0 text-light">
+                    <input type="submit" value="Register Patient" class="bg-warning text-light border-0">
+
+
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="left-footer">
+            <!-- Name and Course -->
+            <span>Yodit : : : CS472-WAP</span>
+        </div>
+        <div class="mid-footer">
+            <span> <a href="./index.htm">Home</a> </span> |
+            <span> <a href="">AboutKIU</a> </span> |
+            <span> <a href="#">Course Regstration Form</a> </span>
+        </div>
+        <div class="right-footer">
+            <!-- Copyright -->
+            <span>&copy; November 2022</span>
+        </div>
+    </footer>
+</body>
+
+</html>
