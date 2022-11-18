@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./js/amazon.js"></script>
+    <title>Event Delegation demo webapp</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="navContainer">
+      <nav>
+        <ul id="ulNavItems">
+          <li>
+            <a id="hyplnkAppBranding" href="./index.html"
+              >CS472:::Event Delegation Demo</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mainContent">
+      <main>
+        <h1>Hi there. Enjoy some Event Delegation</h1>
+        <hr />
+        <div id="productsListContainer">
+          <section id="products">
+            <h2>List of Products</h2>
+            <article>
+              <header class="articleHeader">
+                <h4>Product Name</h4>
+              </header>
+              <p>Here is a brief description/note about this product.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia consectetur iure expedita non pariatur porro enim sunt
+                sed obcaecati saepe.
+              </p>
+              <div class="btnPanel">
+                <a class="lnkBtn" href="http://www.amazon.com"
+                  >Add a new Product</a
+                >
+              </div>
+            </article>
+            <article>
+              <header class="articleHeader">
+                <h4>Product Name</h4>
+              </header>
+              <p>Here is a brief description/note about this product.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia consectetur iure expedita non pariatur porro enim sunt
+                sed obcaecati saepe.
+              </p>
+              <div class="btnPanel">
+                <a class="lnkBtn" href="http://www.amazon.com"
+                  >Add a new Product</a
+                >
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

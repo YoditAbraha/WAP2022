@@ -1,0 +1,71 @@
+/* main.css */
+
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin-bottom: 60px;
+}
+header.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #424242;
+    height: 4em;
+    width: 100%;
+}
+nav {
+    margin: 0em;
+}
+a#hyplnkAppBranding {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 2em;
+}
+ul#ulNavItems > li {
+    display: inline;
+    list-style-type: none;
+}
+a.hyplnkNavItem {
+    color: #efefef;
+    text-decoration: none;
+    font-size: large;
+    border-left: 1px solid #efefef;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+div#divHeaderRightContent {
+    margin-right: 1em; 
+    border: 0px solid #efefef; 
+    width: 100%; 
+    display: inline; 
+    color: #efefef;
+}
+div#mainContent {
+    display: grid;
+    place-content: center;
+    width: 80vw;
+}
+div#mainContent article {
+    border: 1px solid black;
+    padding: .5em 1em .5em 1em;
+}
+div#mainContent article div.btnPanel {
+    display: flex;
+    justify-content: flex-start;
+}
+div#mainContent article a.lnkBtn:link, div#mainContent article a.lnkBtn:visited {
+    text-decoration: none;
+    color: silver;
+    background-color: #424242;
+    border: 1px solid black;
+    padding: .5em 1em .5em 1em;
+}
+div#mainContent article a.lnkBtn:hover {
+    color: whitesmoke;
+}
