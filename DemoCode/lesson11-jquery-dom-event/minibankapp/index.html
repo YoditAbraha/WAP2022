@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS472 MiniBankingApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="./js/minibankapp.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="ulNavItems">
+                <li>
+                    <a id="hyplnkAppBranding" href="./index.html">CS472:::MiniBankingApp</a>
+                </li>
+                <!-- <li>
+                    <a class="hyplnkNavItem" href="./index.html">Home</a>
+                </li> -->
+            </ul>
+        </nav>
+        <div id="divHeaderRightContent">
+            <span style="float: right;">Welcome, Guest</span>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <main>
+            <h1 id="h1BankAccountForm">Bank Account Form</h1>
+            <form id="formNewAccount">
+                <fieldset style="border: 0;">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtAccountNo">Account No</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtAccountNo" id="txtAccountNo" placeholder="01-XXX-XXXX" required autofocus pattern="01-\d{3}-\d{4}">
+                        </div>
+                        <div class="form-item small-instr-text">
+                            <span>Enter your unique account number.</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="txtCustomerName">Customer Name</label>
+                        </div>
+                        <div class="form-item">
+                            <input class="form-ctrl" type="text" name="txtCustomerName" id="txtCustomerName" placeholder="e.g. John B. Smith" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="ddlAccountType">Type of Account</label>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-ctrl-sel" name="ddlAccountType" id="ddlAccountType" required>
+                                <option value="">[Select Type of Account]</option>
+                                <option value="Checking">Checking</option>
+                                <option value="Loan">Loan</option>
+                                <option value="Savings">Savings</option>
+                            </select>
+                        </div>
+                    </div>   
+                    <div class="form-row">
+                        <input class="btn-std-med" type="submit" value="Create New Account">
+                    </div>                                     
+                </fieldset>
+            </form>
+            <table id="tblAccounts">
+                <caption>List of Customer Accounts</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Account No</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Type of Account</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>01-980-0001</td>
+                        <td>James H. Karvill</td>
+                        <td>Savings</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>01-980-0002</td>
+                        <td>Anna Hernandez-Diaz</td>
+                        <td>Checking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <span>
+                CS472-WAP ::: Banking WebApp
+            </span>
+            <span style="float: right;">
+                O. Kalu, MIU ::: &copy; March 2022
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
