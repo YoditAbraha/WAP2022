@@ -1,0 +1,11 @@
+{
+  "name": "ex2-date-module-webapp",
+  "version": "1.0.0",
+  "description": "nodejs webapp demo using modules with exports",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "okalu",
+  "license": "ISC"
+}
